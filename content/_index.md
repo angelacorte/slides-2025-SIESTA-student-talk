@@ -9,10 +9,10 @@ outputs = ["Reveal"]
 # Towards Collective Operating Systems through Aggregate Computing
 ### Student Talk @ SIESTA 2025
 
-[Angela Cortecchia](mailto:angela.cortecchia@unibo.it)
+[Angela Cortecchia](mailto:angela.cortecchia@unibo.it) - PhD Student @ University of Bologna
 
 <div style="text-align: center; width: 100%;">
-<img src="example-background.svg" style="width: 40%" />
+<img src="example-background.svg" style="width: 30%" />
 </div>
 
 --- 
