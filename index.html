@@ -26,13 +26,176 @@
   
 
     <section><h1 id="towards-collective-operating-systems-through-aggregate-computing">Towards Collective Operating Systems through Aggregate Computing</h1>
-<h3 id="student-talk--siesta-2025">Student Talk @ SIESTA 2025</h3>
+<h4 id="student-talk--siesta-2025">Student Talk @ SIESTA 2025</h4>
 <p><a href="mailto:angela.cortecchia@unibo.it">Angela Cortecchia</a> - PhD Student @ University of Bologna</p>
 <div style="text-align: center; width: 100%;">
 <img src="example-background.svg" style="width: 30%">
 </div>
+</section>
+
+<section data-noprocess="" data-shortcode-slide="" data-background-image="https://angelacorte.github.io/slides-2025-SIESTA-student-talk/images/smartcity.webp" data-background-opacity="0.55">
+  
+<div class="" style="background-color: #ffffffc0; border-radius: 20px; padding: 20px; margin: auto; 
+     max-width: 70%;">
+    <h1 id="context">Context</h1>
+<div class="fragment">
+<p>In smart cities applications, e.g. <em>crowd management</em> and <em>surveillance</em>,
+many <strong>heterogeneous sensors</strong> and <strong>devices</strong> can be employed to:</p>
+<ul>
+<li><em>Detect</em> crowd;</li>
+<li><em>Steer</em> the crowd <em>to prevent</em> hazardous situation;</li>
+<li>Potentially, let law enforcement <em>intervene</em>.</li>
+</ul>
+</div>
+</div>
+
+</section>
+
+<section data-noprocess="" data-shortcode-slide="" data-background-image="https://angelacorte.github.io/slides-2025-SIESTA-student-talk/images/wearables.jpg" data-background-opacity="0.55">
+  
+<div class="" style="background-color: #ffffffc0; border-radius: 20px; padding: 20px; margin: auto; 
+     max-width: 70%;">
+    <h1 id="challenges">Challenges</h1>
+<p>Common approaches usually consist of <em>programming each single device</em>.</p>
+<p><strong>Non-scalable</strong> when thousands of different devices are involved.</p>
+<div class="fragment">
+<ul>
+<li><em>Different</em> way to implement <em>programs on different devices</em>;</li>
+<li>Some devices do <em>not support all functionalities</em>;</li>
+<li><em>Time expensive</em> to program each single device;</li>
+<li>Devices have a <em>limited vision of the system</em>;</li>
+<li><em>Non-friendly programming</em> for the developer.</li>
+</ul>
+</div>
+<!-- - Not all devices support the same functionalities; -->
+
+</div>
+
+</section>
+
+<section data-noprocess="" data-shortcode-slide="" data-background-image="https://angelacorte.github.io/slides-2025-SIESTA-student-talk/images/smartstation.png" data-background-opacity="0.55">
+  
+<div class="" style="background-color: #ffffffc0; border-radius: 20px; padding: 20px; margin: auto; 
+     ZgotmplZ">
+    <h1 id="what-do-we-need">What do we need?</h1>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col "><h3 id="crowd-management-scenario">Crowd Management scenario</h3>
+<ul>
+    <li class="fragment" data-fragment-index="0">Drones and sensors <em>observe and send data</em> to the system;</li>
+    <li class="fragment" data-fragment-index="1">Crowd <em>steering based on data</em> evaluation;</li>
+    <li class="fragment" data-fragment-index="2"><em>Coordination</em> between devices;</li>
+    <li class="fragment" data-fragment-index="3">Law enforcement <em>intervention</em>;</li>
+</ul>
+</div>
+<div class="col "><h3 id="effective-technologies">Effective technologies</h3>
+<ul>
+    <li class="fragment" data-fragment-index="0"><em>Distributed</em> sensors and actuators able to <em>execute multiple programs</em>;</li>
+    <li class="fragment" data-fragment-index="1">Communication between <em>different processes</em>;</li>
+    <li class="fragment" data-fragment-index="2"><em>Intra-process</em> communication;</li>
+    <li class="fragment" data-fragment-index="3">Third-party entities able to <em>interrupt, pause, or add processes at runtime</em>.</li>
+    <!-- <li>Interoperability between different devices.</li> -->
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section data-noprocess="" data-shortcode-slide="" data-background-image="https://angelacorte.github.io/slides-2025-SIESTA-student-talk/images/world.svg" data-background-opacity="0.55">
+  
+<div class="" style="background-color: #ffffffc0; border-radius: 20px; padding: 20px; margin: auto; 
+     max-width: 70%;">
+    <h1 id="meet-aggregate-computing">Meet Aggregate Computing</h1>
+<p>A programming paradigm to <strong>define the behavior of a collective of heterogeneous devices</strong>.</p>
+<p>Every device runs the same program and <em>adapts to dynamic changes in the environment</em>.
+<img src="./images/acDevices.svg" width="70%"></p>
+<div class="fragment">
+<h3 id="current-limitations">Current limitations:</h3>
+<ul>
+<li>Aggregate systems <strong>run just one program</strong>;</li>
+<li><em>Can not</em> be modified, added, or interrupted <em>at runtime without affecting other devices</em>.</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<section data-noprocess="" data-shortcode-slide="" data-background-image="https://angelacorte.github.io/slides-2025-SIESTA-student-talk/images/collective.svg" data-background-opacity="0.55">
+  
+<div class="" style="background-color: #ffffffc0; border-radius: 20px; padding: 20px; margin: auto; 
+     ZgotmplZ">
+    <h1 id="idea-collective-operating-systems">Idea: <em>Collective</em> Operating Systems</h1>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col col-8">
+<p>Aim to <em>parallel the main functionalities of modern OSs</em>,
+from a <strong>collective</strong> point of view:</p>
+<!-- Closing the gap of the current technologies: -->
+<ul>
+<li>Runtime program injection;</li>
+<li>Users and permissions;</li>
+<li>Signal and interrupts;</li>
+<li>Multiple processes able to communicate;</li>
+<li>Distributed sensors and actuators;</li>
+<li>Intra-process communication.</li>
+</ul>
+</div>
+<div class="col "><img src="./images/devs.png" width="90%">
+</div>
+</div>
+</div>
+</div>
+
+</section>
+
+<section data-noprocess="" data-shortcode-slide="" data-background-image="https://angelacorte.github.io/slides-2025-SIESTA-student-talk/images/smartstation.png" data-background-opacity="0.55">
+  
+<div class="" style="background-color: #ffffffc0; border-radius: 20px; padding: 20px; margin: auto; 
+     ZgotmplZ">
+    <h1 id="what-ive-done-so-far">What I’ve done so far</h1>
+<!-- sviluppo di Collektive, integrazione con Alchemist, primi test con android -->
+<!-- ricerca: algoritmo di morfogenesi per la gestione delle risorse distribuite -->
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col "><p>Development of <strong>Collektive</strong>: a framework for Aggregate Computing in <em>Kotlin Multiplatform</em>;</p>
+<p>Integration of the tool with the Alchemist Simulator;</p>
+<img src="./images/collektive-logo-white-no-background.svg" width="30%">
+</div>
+<div class="col "><p>Implementation of a morphogenesis algorithm with <em>Collektive</em>, for the management of distributed resources;</p>
+<p>First testings on Android and iOS devices;</p>
+<img src="./images/oneroot.gif" width="40%">
+</div>
+</div>
+</div>
+
+</div>
+
 </section><section>
-<h1 id="slide-1">Slide 1</h1>
+<div class="" style="background-color: #ffffffc0; border-radius: 20px; padding: 20px; margin: auto; 
+     ZgotmplZ">
+    <h1 id="next">Next</h1>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col "><p><strong>Short term</strong>:</p>
+<ul>
+<li>Implementation of self-stabilizing Gossip and Gradient algorithms, reducing communication overhead while preserving accuracy.</li>
+<li>Extension of the Collective OS model with <em>users, permissions, signals, and inter-process communication</em>.</li>
+<li>Validation on reference scenarios: crowd management, autonomous navigation, smart cities.</li>
+</ul>
+</div>
+<div class="col "><p><strong>Long term vision</strong>:</p>
+<ul>
+<li>Development of a full prototype of a <strong>Collective Operating System</strong>, open-source and deployable on heterogeneous devices.</li>
+<li>Towards resilient, adaptive collective systems with tangible impact on safety, sustainability, and coordination at scale.</li>
+</ul>
+<!-- working on a gossip and gradient algorithm that will reduce the communication -->
+<!-- test of the architecture on real systems eg. notte dei ricercatori -->
+</div>
+</div>
+</div>
+
+</div>
+
 <!-- 
 What excites you in your field
 Your current research focus
