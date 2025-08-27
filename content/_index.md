@@ -21,7 +21,7 @@ outputs = ["Reveal"]
 
 {{< rectdiv >}}
 
-# Context
+# Potential Application
 
 <div class="fragment">
 
@@ -158,7 +158,7 @@ from a **collective** point of view:
 
 --- 
 
-{{< slide background-image="./images/smartstation.png" background-opacity="0.55">}}
+{{< slide background-image="./images/crowd.png" background-opacity="0.55">}}
 
 {{< rectdiv style="max-width: 90%;" >}}
 
@@ -193,9 +193,10 @@ First testings on Android and iOS devices;
 
 ---
 
+{{< slide background-image="./images/question.svg" background-opacity="0.55">}}
 {{< rectdiv style="max-width: 90%;" >}}
 
-# Next
+# What's next?
 
 {{% multicol %}}
 
@@ -219,6 +220,8 @@ First testings on Android and iOS devices;
 
 {{% /col %}}
 {{% /multicol %}}
+
+## Also, **suggestions**?
 
 {{< /rectdiv >}}
 
