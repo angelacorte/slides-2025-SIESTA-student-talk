@@ -6,10 +6,10 @@ outputs = ["Reveal"]
 
 +++
 
-# Towards Collective Operating Systems through Aggregate Computing
+# Towards **Collective Operating Systems** through Aggregate Computing
 #### Student Talk @ SIESTA 2025
 
-[Angela Cortecchia](mailto:angela.cortecchia@unibo.it) - PhD Student @ University of Bologna
+[Angela Cortecchia](mailto:angela.cortecchia@unibo.it) - 1st year PhD Student @ University of Bologna
 
 <div style="text-align: center; width: 100%;">
 <img src="example-background.svg" style="width: 30%" />
@@ -23,41 +23,15 @@ outputs = ["Reveal"]
 
 # Potential Application
 
-<div class="fragment">
-
 In smart cities applications, e.g. _crowd management_ and _surveillance_, 
 many **heterogeneous sensors** and **devices** can be employed to:
 - *Detect* crowd;
 - *Steer* the crowd *to prevent* hazardous situation;
 - Potentially, let law enforcement *intervene*.
-</div>
 
 {{< /rectdiv >}}
 
 --- 
-
-{{< slide background-image="./images/wearables.jpg" background-opacity="0.55">}}
-
-{{< rectdiv >}}
-# Challenges
-
-Common approaches usually consist of _programming each single device_.
-
-**Non-scalable** when thousands of different devices are involved.
-
-<div class="fragment">
-
-- *Different* way to implement *programs on different devices*;
-- Some devices do *not support all functionalities*;
-- *Time expensive* to program each single device;
-- Devices have a *limited vision of the system*;
-- *Non-friendly programming* for the developer.
-</div>
-
-<!-- - Not all devices support the same functionalities; -->
-{{< /rectdiv >}}
-
----
 
 {{< slide background-image="./images/smartstation.png" background-opacity="0.55">}}
 
@@ -98,11 +72,34 @@ Common approaches usually consist of _programming each single device_.
 
 --- 
 
+{{< slide background-image="./images/wearables.jpg" background-opacity="0.55">}}
+
+{{< rectdiv >}}
+# Challenges
+
+Common approaches usually consist of _programming each single device_.
+
+**Non-scalable** when thousands of different devices are involved.
+
+<div class="fragment">
+
+- *Different* way to implement *programs on different devices*;
+- Some devices do *not support all functionalities*;
+- *Time expensive* to program each single device;
+- Devices have a *limited vision of the system*;
+- *Non-friendly programming* for the developer.
+</div>
+
+<!-- - Not all devices support the same functionalities; -->
+{{< /rectdiv >}}
+
+---
+
 {{< slide background-image="./images/world.svg" background-opacity="0.55">}}
 
 {{< rectdiv >}}
 
-# Meet Aggregate Computing
+# Meet Aggregate Computing<small>1</small>
 
 A programming paradigm to **define the behavior of a collective of heterogeneous devices**.
 
@@ -118,6 +115,12 @@ Every device runs the same program and *adapts to dynamic changes in the environ
 
 </div>
 
+<div>
+<small style="text-align: left">
+</br>
+[1] Beal, J., Pianini, D., Viroli, M. "Aggregate Programming for the Internet of Things." 2015.</br>
+</small>
+</div>
 {{< /rectdiv >}}
 
 ---
@@ -162,7 +165,7 @@ from a **collective** point of view:
 
 {{< rectdiv style="max-width: 90%;" >}}
 
-# What I've done so far
+# Where we are so far
 
 <!-- sviluppo di Collektive, integrazione con Alchemist, primi test con android -->
 <!-- ricerca: algoritmo di morfogenesi per la gestione delle risorse distribuite -->
@@ -171,9 +174,9 @@ from a **collective** point of view:
 
 {{% col %}}
 
-Development of **Collektive**: a framework for Aggregate Computing in _Kotlin Multiplatform_;
+Development of **Collektive**<small>2</small>: a framework for Aggregate Computing in _Kotlin Multiplatform_
 
-Integration of the tool with the Alchemist Simulator;
+Integration of the tool with the Alchemist Simulator
 
 <img src="./images/collektive-logo-white-no-background.svg" width=30%>
 
@@ -181,14 +184,21 @@ Integration of the tool with the Alchemist Simulator;
 
 {{% col %}}
 
-Implementation of a morphogenesis algorithm with _Collektive_, for the management of distributed resources;
+Implementation of a plant-inspired morphogenesis algorithm with _Collektive_<small>3</small>, for the management of distributed resources
 
-First testings on Android and iOS devices;
+First testings on Android and iOS devices
 
 <img src="./images/oneroot.gif" width=40%>
 
 {{% /col %}}
 {{% /multicol %}}
+
+<div>
+<small style="text-align: left">
+[2] https://collektive.github.io </br>
+[3] A. Cortecchia, D. Pianini, G. Ciatto, and R. Casadei, “An Aggregate Vascular Morphogenesis Controller for Engineered Self-Organising Spatial Structures,” 2024.</br>
+</small>
+</div>
 {{< /rectdiv >}}
 
 ---
@@ -221,9 +231,14 @@ First testings on Android and iOS devices;
 {{% /col %}}
 {{% /multicol %}}
 
-## Also, **suggestions**?
-
 {{< /rectdiv >}}
+
+---
+
+## Thank you for the attention 
+:)
+
+### **Questions** or _Suggestions_?
 
 <!-- 
 What excites you in your field
