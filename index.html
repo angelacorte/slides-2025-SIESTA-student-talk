@@ -25,9 +25,9 @@
       <div class="slides">
   
 
-    <section><h1 id="towards-collective-operating-systems-through-aggregate-computing">Towards Collective Operating Systems through Aggregate Computing</h1>
+    <section><h1 id="towards-collective-operating-systems-through-aggregate-computing">Towards <strong>Collective Operating Systems</strong> through Aggregate Computing</h1>
 <h4 id="student-talk--siesta-2025">Student Talk @ SIESTA 2025</h4>
-<p><a href="mailto:angela.cortecchia@unibo.it">Angela Cortecchia</a> - PhD Student @ University of Bologna</p>
+<p><a href="mailto:angela.cortecchia@unibo.it">Angela Cortecchia</a> - 1st year PhD Student @ University of Bologna</p>
 <div style="text-align: center; width: 100%;">
 <img src="example-background.svg" style="width: 30%">
 </div>
@@ -38,7 +38,6 @@
 <div class="" style="background-color: #ffffffc0; border-radius: 20px; padding: 20px; margin: auto; 
      max-width: 70%;">
     <h1 id="potential-application">Potential Application</h1>
-<div class="fragment">
 <p>In smart cities applications, e.g. <em>crowd management</em> and <em>surveillance</em>,
 many <strong>heterogeneous sensors</strong> and <strong>devices</strong> can be employed to:</p>
 <ul>
@@ -46,29 +45,6 @@ many <strong>heterogeneous sensors</strong> and <strong>devices</strong> can be 
 <li><em>Steer</em> the crowd <em>to prevent</em> hazardous situation;</li>
 <li>Potentially, let law enforcement <em>intervene</em>.</li>
 </ul>
-</div>
-</div>
-
-</section>
-
-<section data-noprocess="" data-shortcode-slide="" data-background-image="https://angelacorte.github.io/slides-2025-SIESTA-student-talk/images/wearables.jpg" data-background-opacity="0.55">
-  
-<div class="" style="background-color: #ffffffc0; border-radius: 20px; padding: 20px; margin: auto; 
-     max-width: 70%;">
-    <h1 id="challenges">Challenges</h1>
-<p>Common approaches usually consist of <em>programming each single device</em>.</p>
-<p><strong>Non-scalable</strong> when thousands of different devices are involved.</p>
-<div class="fragment">
-<ul>
-<li><em>Different</em> way to implement <em>programs on different devices</em>;</li>
-<li>Some devices do <em>not support all functionalities</em>;</li>
-<li><em>Time expensive</em> to program each single device;</li>
-<li>Devices have a <em>limited vision of the system</em>;</li>
-<li><em>Non-friendly programming</em> for the developer.</li>
-</ul>
-</div>
-<!-- - Not all devices support the same functionalities; -->
-
 </div>
 
 </section>
@@ -103,11 +79,33 @@ many <strong>heterogeneous sensors</strong> and <strong>devices</strong> can be 
 
 </section>
 
+<section data-noprocess="" data-shortcode-slide="" data-background-image="https://angelacorte.github.io/slides-2025-SIESTA-student-talk/images/wearables.jpg" data-background-opacity="0.55">
+  
+<div class="" style="background-color: #ffffffc0; border-radius: 20px; padding: 20px; margin: auto; 
+     max-width: 70%;">
+    <h1 id="challenges">Challenges</h1>
+<p>Common approaches usually consist of <em>programming each single device</em>.</p>
+<p><strong>Non-scalable</strong> when thousands of different devices are involved.</p>
+<div class="fragment">
+<ul>
+<li><em>Different</em> way to implement <em>programs on different devices</em>;</li>
+<li>Some devices do <em>not support all functionalities</em>;</li>
+<li><em>Time expensive</em> to program each single device;</li>
+<li>Devices have a <em>limited vision of the system</em>;</li>
+<li><em>Non-friendly programming</em> for the developer.</li>
+</ul>
+</div>
+<!-- - Not all devices support the same functionalities; -->
+
+</div>
+
+</section>
+
 <section data-noprocess="" data-shortcode-slide="" data-background-image="https://angelacorte.github.io/slides-2025-SIESTA-student-talk/images/world.svg" data-background-opacity="0.55">
   
 <div class="" style="background-color: #ffffffc0; border-radius: 20px; padding: 20px; margin: auto; 
      max-width: 70%;">
-    <h1 id="meet-aggregate-computing">Meet Aggregate Computing</h1>
+    <h1 id="meet-aggregate-computing1">Meet Aggregate Computing<small>1</small></h1>
 <p>A programming paradigm to <strong>define the behavior of a collective of heterogeneous devices</strong>.</p>
 <p>Every device runs the same program and <em>adapts to dynamic changes in the environment</em>.
 <img src="./images/acDevices.svg" width="70%"></p>
@@ -117,6 +115,12 @@ many <strong>heterogeneous sensors</strong> and <strong>devices</strong> can be 
 <li>Aggregate systems <strong>run just one program</strong>;</li>
 <li><em>Can not</em> be modified, added, or interrupted <em>at runtime without affecting other devices</em>.</li>
 </ul>
+</div>
+<div>
+<small style="text-align: left">
+<br>
+[1] Beal, J., Pianini, D., Viroli, M. "Aggregate Programming for the Internet of Things." 2015.<br>
+</small>
 </div>
 
 </div>
@@ -154,19 +158,25 @@ from a <strong>collective</strong> point of view:</p>
   
 <div class="" style="background-color: #ffffffc0; border-radius: 20px; padding: 20px; margin: auto; 
      ZgotmplZ">
-    <h1 id="what-ive-done-so-far">What I’ve done so far</h1>
+    <h1 id="where-we-are-so-far">Where we are so far</h1>
 <!-- sviluppo di Collektive, integrazione con Alchemist, primi test con android -->
 <!-- ricerca: algoritmo di morfogenesi per la gestione delle risorse distribuite -->
 <div class="container w-100 m-0 p-0">
-    <div class="row "><div class="col "><p>Development of <strong>Collektive</strong>: a framework for Aggregate Computing in <em>Kotlin Multiplatform</em>;</p>
-<p>Integration of the tool with the Alchemist Simulator;</p>
+    <div class="row "><div class="col "><p>Development of <strong>Collektive</strong><small>2</small>: a framework for Aggregate Computing in <em>Kotlin Multiplatform</em></p>
+<p>Integration of the tool with the Alchemist Simulator</p>
 <img src="./images/collektive-logo-white-no-background.svg" width="30%">
 </div>
-<div class="col "><p>Implementation of a morphogenesis algorithm with <em>Collektive</em>, for the management of distributed resources;</p>
-<p>First testings on Android and iOS devices;</p>
+<div class="col "><p>Implementation of a plant-inspired morphogenesis algorithm with <em>Collektive</em><small>3</small>, for the management of distributed resources</p>
+<p>First testings on Android and iOS devices</p>
 <img src="./images/oneroot.gif" width="40%">
 </div>
 </div>
+</div>
+<div>
+<small style="text-align: left">
+[2] https://collektive.github.io <br>
+[3] A. Cortecchia, D. Pianini, G. Ciatto, and R. Casadei, “An Aggregate Vascular Morphogenesis Controller for Engineered Self-Organising Spatial Structures,” 2024.<br>
+</small>
 </div>
 
 </div>
@@ -196,10 +206,13 @@ from a <strong>collective</strong> point of view:</p>
 </div>
 </div>
 </div>
-<h2 id="also-suggestions">Also, <strong>suggestions</strong>?</h2>
 
 </div>
 <p></p>
+</section><section>
+<h2 id="thank-you-for-the-attention">Thank you for the attention</h2>
+<p>:)</p>
+<h3 id="questions-or-suggestions"><strong>Questions</strong> or <em>Suggestions</em>?</h3>
 <!-- 
 What excites you in your field
 Your current research focus
