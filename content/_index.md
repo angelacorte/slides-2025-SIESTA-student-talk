@@ -21,7 +21,7 @@ outputs = ["Reveal"]
 
 {{< rectdiv >}}
 
-# Potential Application
+# Reference Scenario
 
 In smart cities applications, e.g. _crowd management_ and _surveillance_, 
 many **heterogeneous sensors** and **devices** can be employed to:
@@ -87,7 +87,7 @@ Common approaches usually consist of _programming each single device_.
 - Some devices do *not support all functionalities*;
 - *Time expensive* to program each single device;
 - Devices have a *limited vision of the system*;
-- *Non-friendly programming* for the developer.
+- *Challenging* for developers to implement.
 </div>
 
 <!-- - Not all devices support the same functionalities; -->
@@ -174,9 +174,9 @@ from a **collective** point of view:
 
 {{% col %}}
 
-Development of **Collektive**<small>2</small>: a framework for Aggregate Computing in _Kotlin Multiplatform_
+Development of **Collektive**<small>2</small>: a framework for Aggregate Computing in _Kotlin Multiplatform_.
 
-Integration of the tool with the Alchemist Simulator
+Integration of the tool with the _Alchemist Simulator_<small>3</small>.
 
 <img src="./images/collektive-logo-white-no-background.svg" width=30%>
 
@@ -184,9 +184,9 @@ Integration of the tool with the Alchemist Simulator
 
 {{% col %}}
 
-Implementation of a plant-inspired morphogenesis algorithm with _Collektive_<small>3</small>, for the management of distributed resources
+Implementation of a _plant-inspired morphogenesis_ algorithm<small>4</small> for the management of distributed resources
 
-First testings on Android and iOS devices
+First testings on _Android_ and _iOS_ devices.
 
 <img src="./images/oneroot.gif" width=40%>
 
@@ -196,7 +196,8 @@ First testings on Android and iOS devices
 <div>
 <small style="text-align: left">
 [2] https://collektive.github.io </br>
-[3] A. Cortecchia, D. Pianini, G. Ciatto, and R. Casadei, “An Aggregate Vascular Morphogenesis Controller for Engineered Self-Organising Spatial Structures,” 2024.</br>
+[3] D. Pianini, S. Montagna, and M. Viroli, “Chemical-oriented simulation of computational systems with ALCHEMIST”.</br>
+[4] A. Cortecchia, D. Pianini, G. Ciatto, and R. Casadei, “An Aggregate Vascular Morphogenesis Controller for Engineered Self-Organising Spatial Structures,” 2024.
 </small>
 </div>
 {{< /rectdiv >}}
@@ -208,34 +209,19 @@ First testings on Android and iOS devices
 
 # What's next?
 
-{{% multicol %}}
-
-{{% col %}}
-
-**Short term**:
- - Implementation of self-stabilizing Gossip and Gradient algorithms, reducing communication overhead while preserving accuracy.
- - Extension of the Collective OS model with *users, permissions, signals, and inter-process communication*.
- - Validation on reference scenarios: crowd management, autonomous navigation, smart cities.
-
-{{% /col %}}
-
-{{% col %}}
-
-**Long term vision**:
+ - Implementation of algorithms to _reduce communication overhead_ while preserving accuracy;
+ - Extension of the Collective OS model with *users, permissions, signals, and inter-process communication*;
+ - Validation on *reference scenarios*: crowd management, autonomous navigation, smart cities;
  - Development of a full prototype of a **Collective Operating System**, open-source and deployable on heterogeneous devices.
- - Towards resilient, adaptive collective systems with tangible impact on safety, sustainability, and coordination at scale.
 
 <!-- working on a gossip and gradient algorithm that will reduce the communication -->
 <!-- test of the architecture on real systems eg. notte dei ricercatori -->
-
-{{% /col %}}
-{{% /multicol %}}
 
 {{< /rectdiv >}}
 
 ---
 
-## Thank you for the attention 
+## Thank you for the attention!
 :)
 
 ### **Questions** or _Suggestions_?
